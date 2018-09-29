@@ -15,16 +15,16 @@ int main()
 		average += buf[i];
 	}
 	average = average / buflen;
-	
+	printf("Mean: %f\n", average);
+
 	for (int i = 0; i < buflen; i++)
 	{
 		buf[i] = buf[i] - average;
 		buf[i] = buf[i] * buf[i];
 		sum += buf[i];
 		finalResult = sum / (buflen - 1);
-		printf("test: %f\n", finalResult);
 		finalResult = sqrt(finalResult);
 	}
 
-	printf("Answer: %f\n", finalResult);
+	printf("Standard Deviation: %f\n", finalResult);
 }
