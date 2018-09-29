@@ -21,6 +21,7 @@ int main()
 		buf[i] = buf[i] * buf[i];
 		sum += buf[i];
 		finalResult = sum / (buflen - 1);
+		printf("test: %f\n", finalResult);
 		finalResult = sqrt(finalResult);
 	}
 
