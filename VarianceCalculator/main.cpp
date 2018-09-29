@@ -3,8 +3,9 @@
 
 int main()
 {
-	int buflen = 6;
 	float buf[] = {5,6,7,8,9,10 };
+
+	int buflen = sizeof(buf) / sizeof(float);
 	float average = 0;
 	float sum = 0;
 	float finalResult = 0;
